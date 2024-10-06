@@ -3,7 +3,7 @@ A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 A = sorted(A)
 B = sorted(B)
-m_min = 10 ** 9 + 1
+m_min = 10**9 + 1
 if max(min(A), min(B)) > min(max(A), max(B)):
     m_min = abs(max(min(A), min(B)) - min(max(A), max(B)))
 else:

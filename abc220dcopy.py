@@ -9,14 +9,15 @@ def main():
 
     for i in range(1, N):
         for j in range(10):
-            f = (j + A[i]) % 10  # 一番左のjと、二番目に左のA[i]に操作Fをしたとき、新たに一番左になる数字
+            # 一番左のjと、二番目に左のA[i]に操作Fをしたとき、新たに一番左になる数字
+            f = (j + A[i]) % 10
             g = (j * A[i]) % 10  # 操作G
             dp[i][f] += dp[i - 1][j]
             dp[i][g] += dp[i - 1][j]
             dp[i][f] %= MOD
             dp[i][g] %= MOD
             print("================")
-            print("i:", i, "j:", j, "f:", f, "g:", g, "dp[i-1][j]:", dp[i-1][j])
+            print("i:", i, "j:", j, "f:", f, "g:", g, "dp[i-1][j]:", dp[i - 1][j])
 
     # for i in range(10):
     #     print(dp[N - 1][i])

@@ -1,7 +1,7 @@
 def main():
     N = int(input())
     S = input()
-    min_turn = 3 * 10 ** 10
+    min_turn = 3 * 10**10
     sum_W = [0]
     for i in range(0, N):
         if S[i] == "W":

@@ -1,7 +1,7 @@
 S = input()
 W = "chokudai"
 WL = tuple([] for i in range(len(W)))
-M = 10 ** 9 + 7
+M = 10**9 + 7
 count = 0
 
 for s in range(len(S)):

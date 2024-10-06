@@ -10,7 +10,7 @@ def main():
     for i in range(N):
         dict_t[T[i]].append(i)
     sg = [0] * N  # 初めて宝石をもらった時刻
-    mtime = 100 ** 9
+    mtime = 100**9
     for t in range(mtime):
         # 高橋くんから宝石をもらえるか？
         if t in dict_t:
